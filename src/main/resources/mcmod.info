@@ -1,0 +1,16 @@
+[
+{
+  "modid": "lootingmod",
+  "name": "Looting VI Mod",
+  "description": "A mod that allows you to set the max level for all vanilla enchantments that are made in a way that the level matters.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://www.curseforge.com/minecraft/mc-mods/lootingvi",
+  "updateUrl": "",
+  "authorList": ["ToMe25"],
+  "credits": "…",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
