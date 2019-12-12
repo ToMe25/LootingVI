@@ -1,0 +1,23 @@
+modLoader="javafml" #mandatory
+loaderVersion="[26,)" #mandatory
+issueTrackerURL="https://github.com/ToMe25/LootingVI/issues"
+[[mods]] #mandatory
+    modId="lootingmod" #mandatory
+    version="${file.jarVersion}" #mandatory
+    displayName="Looting VI Mod" #mandatory
+    displayURL="https://www.curseforge.com/minecraft/mc-mods/lootingvi"
+    credits="…"
+    authors="ToMe25"
+    description='''A mod that allows you to set the max level for all vanilla enchantments that are made in a way that the level matters.'''
+[[dependencies.tomesetup]]
+    modId="forge"
+    mandatory=true
+    versionRange="[26,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.tomesetup]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.14,1.14.4]"
+    ordering="NONE"
+    side="BOTH"
