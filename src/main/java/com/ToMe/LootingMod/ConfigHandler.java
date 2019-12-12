@@ -102,7 +102,8 @@ public class ConfigHandler {
 	
 	public void InitConfig() {
 		//config.addCustomCategoryComment(CATEGORY_GENERAL, "The Configuration of this Mod.");
-		config.setComment(CATEGORY_GENERAL, "The Configuration of this Mod.");
+		//config.setComment(CATEGORY_GENERAL, "The Configuration of this Mod.");
+		specBuilder.comment("The Configuration of this Mod.").push(CATEGORY_GENERAL).pop();
 		//EnableCreeperKill = config.getBoolean("EnableCreeperKill", CATEGORY_GENERAL, true, "Enables / Disables the CreeperKill Enchant.");
 		//EnableCreeperKill = getBoolean("EnableCreeperKill", CATEGORY_GENERAL, true, "Enables / Disables the CreeperKill Enchant.");
 		getBoolean("EnableCreeperKill", CATEGORY_GENERAL, true, "Enables / Disables the CreeperKill Enchant.");
