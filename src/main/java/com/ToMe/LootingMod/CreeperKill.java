@@ -42,9 +42,9 @@ public class CreeperKill extends Enchantment{
 		super.onEntityDamaged(user, target, level);
 	}
 	
-	public int getMinEnchantability(int enchantmentLevel)
-	{
-		return enchantmentLevel * 9;
+	public int getMinEnchantability(int enchantmentLevel) {
+		//return enchantmentLevel * 9;
+		return ConfigHandler.CreeperKillBaseEnchantability + (enchantmentLevel - 1) * ConfigHandler.CreeperKillEnchantabilityMultiplier;
 	}
 	
 	public int getMaxEnchantability(int enchantmentLevel)
