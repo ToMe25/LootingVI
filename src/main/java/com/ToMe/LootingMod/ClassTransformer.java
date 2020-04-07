@@ -291,7 +291,7 @@ public class ClassTransformer implements IClassTransformer {
 						//toInsert.add(new InsnNode(Opcodes.IADD));
 						toInsert.add(new FieldInsnNode(Opcodes.GETSTATIC, OWNER, configField, "I"));
 						method.instructions.insertBefore(targetNode, toInsert);
-						ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS | ClassWriter.COMPUTE_FRAMES);
+						ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS);
 						classNode.accept(classWriter);
 						return classWriter.toByteArray();
 					}
@@ -339,7 +339,7 @@ public class ClassTransformer implements IClassTransformer {
 						toInsert.add(new FieldInsnNode(Opcodes.GETSTATIC, OWNER, baseConfigField, "I"));
 						toInsert.add(new InsnNode(Opcodes.IADD));
 						method.instructions.insertBefore(targetNode, toInsert);
-						ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS | ClassWriter.COMPUTE_FRAMES);
+						ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS);
 						classNode.accept(classWriter);
 						return classWriter.toByteArray();
 					}
@@ -384,7 +384,7 @@ public class ClassTransformer implements IClassTransformer {
 						toInsert.add(new VarInsnNode(Opcodes.ILOAD, 1));
 						toInsert.add(new MethodInsnNode(Opcodes.INVOKESTATIC, OWNER, "getDamageEnchantability", "(II)I", false));
 						method.instructions.insertBefore(targetNode, toInsert);
-						ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS | ClassWriter.COMPUTE_FRAMES);
+						ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS);
 						classNode.accept(classWriter);
 						return classWriter.toByteArray();
 					}
@@ -431,7 +431,7 @@ public class ClassTransformer implements IClassTransformer {
 						toInsert.add(new VarInsnNode(Opcodes.ILOAD, 1));
 						toInsert.add(new MethodInsnNode(Opcodes.INVOKESTATIC, OWNER, "getProtectionEnchantability", "(II)I", false));
 						method.instructions.insertBefore(targetNode, toInsert);
-						ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS | ClassWriter.COMPUTE_FRAMES);
+						ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS);
 						classNode.accept(classWriter);
 						return classWriter.toByteArray();
 					}
