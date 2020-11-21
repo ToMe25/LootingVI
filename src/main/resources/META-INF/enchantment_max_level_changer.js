@@ -187,6 +187,15 @@ function initializeCoreMod() {
             'transformer': function(classNode) {
                 return transform(classNode, 'Piercing');
             }
+        },
+        'soulspeed': {
+            'target': {
+                'type': 'CLASS',
+                'name': 'net.minecraft.enchantment.SoulSpeedEnchantment'
+            },
+            'transformer': function(classNode) {
+                return transform(classNode, 'SoulSpeed');
+            }
         }
     }
 }
