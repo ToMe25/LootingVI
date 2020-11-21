@@ -197,7 +197,7 @@ public class ConfigHandler {
 		getInt("FireAspectEnchantmentLvl", CATEGORY_GENERAL, 2, 1, 10, "The max level for the enchantments of class FireAspectEnchantment(Fire Aspect).");
 		//EnchantArrowKnockbackLvl = config.getInt("EnchantmentArrowKnockbackLvl", CATEGORY_GENERAL, 2, 1, 10, "The max level for the enchantments of class PunchEnchantment(Punch).");
 		//EnchantArrowKnockbackLvl = getInt("PunchEnchantmentLvl", CATEGORY_GENERAL, 2, 1, 10, "The max level for the enchantments of class PunchEnchantment(Punch).");
-		getInt("PunchkEnchantmentLvl", CATEGORY_GENERAL, 2, 1, 10, "The max level for the enchantments of class PunchEnchantment(Punch).");
+		getInt("PunchEnchantmentLvl", CATEGORY_GENERAL, 2, 1, 10, "The max level for the enchantments of class PunchEnchantment(Punch).");
 		//EnchantFishingSpeedLvl = config.getInt("EnchantmentFishingSpeedLvl", CATEGORY_GENERAL, 3, 1, 10, "The max level for the enchantments of class LureEnchantment(Lure).");
 		//EnchantFishingSpeedLvl = getInt("LureEnchantmentLvl", CATEGORY_GENERAL, 3, 1, 10, "The max level for the enchantments of class LureEnchantment(Lure).");
 		getInt("LureEnchantmentLvl", CATEGORY_GENERAL, 3, 1, 10, "The max level for the enchantments of class LureEnchantment(Lure).");
