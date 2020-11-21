@@ -62,6 +62,7 @@ public class ConfigHandler {
 	public static int EnchantRiptideLvl;
 	public static int EnchantQuickChargeLvl;
 	public static int EnchantPiercingLvl;
+	public static int EnchantSoulSpeedLvl;
 	public static int SharpnessBaseEnchantability;
 	public static int SmiteBaseEnchantability;
 	public static int BaneOfArthropodsBaseEnchantability;
@@ -112,6 +113,8 @@ public class ConfigHandler {
 	public static int EnchantQuickChargeEnchantabilityMultiplier;
 	public static int EnchantPiercingBaseEnchantability;
 	public static int EnchantPiercingEnchantabilityMultiplier;
+	public static int EnchantSoulSpeedBaseEnchantability;
+	public static int EnchantSoulSpeedEnchantabilityMultiplier;
 	public static int CreeperKillBaseEnchantability;
 	public static int CreeperKillEnchantabilityMultiplier;
 	
@@ -214,6 +217,7 @@ public class ConfigHandler {
 		getInt("QuickChargeEnchantmentLvl", CATEGORY_GENERAL, 3, 1, 10, "The max level for the enchantments of class QuickChargeEnchantment(Quick Charge).");
 		//EnchantPiercingLvl = getInt("PiercingEnchantmentLvl", CATEGORY_GENERAL, 4, 1, 10, "The max level for the enchantments of class PiercingEnchantment(Piercing).");
 		getInt("PiercingEnchantmentLvl", CATEGORY_GENERAL, 4, 1, 10, "The max level for the enchantments of class PiercingEnchantment(Piercing).");
+		getInt("SoulSpeedEnchantmentLvl", CATEGORY_GENERAL, 3, 1, 10, "The max level for the enchantments of class SoulSpeedEnchantment(Sould Speed).");
 		//SharpnessBaseEnchantability = config.getInt("SharpnessBaseEnchantability", CATEGORY_GENERAL, 1, 0, 50, "The base value for the min Enchantability of Sharpness. The min Enchantability is the result of baseEnchantability(this) + (enchantmentLevel - 1) * enchantabilityMultiplier.");
 		getInt("SharpnessBaseEnchantability", CATEGORY_GENERAL, 1, 0, 50, "The base value for the min Enchantability of Sharpness. The min Enchantability is the result of baseEnchantability(this) + (enchantmentLevel - 1) * enchantabilityMultiplier.");
 		//SmiteBaseEnchantability = config.getInt("SmiteBaseEnchantability", CATEGORY_GENERAL, 5, 0, 50, "The base value for the min Enchantability of Smite. The min Enchantability is the result of baseEnchantability(this) + (enchantmentLevel - 1) * enchantabilityMultiplier.");
@@ -304,6 +308,8 @@ public class ConfigHandler {
 		getInt("EnchantQuickChargeyEnchantabilityMultiplier", CATEGORY_GENERAL, 20, 0, 50, "The multiplier for the min Enchantability of the class QuickChargeEnchantment. The min Enchantability is the result of baseEnchantability + (enchantmentLevel - 1) * enchantabilityMultiplier(this).");
 		getInt("EnchantPiercingBaseEnchantability", CATEGORY_GENERAL, 1, 0, 50, "The base value for the min Enchantability of the class PiercingEnchantment. The min Enchantability is the result of baseEnchantability(this) + (enchantmentLevel - 1) * enchantabilityMultiplier.");
 		getInt("EnchantPiercingEnchantabilityMultiplier", CATEGORY_GENERAL, 10, 0, 50, "The multiplier for the min Enchantability of the class PiercingEnchantment. The min Enchantability is the result of baseEnchantability + (enchantmentLevel - 1) * enchantabilityMultiplier(this).");
+		getInt("EnchantSoulSpeedBaseEnchantability", CATEGORY_GENERAL, 1, 0, 50, "The base value for the min Enchantability of the class SoulSpeedEnchantment. The min Enchantability is the result of baseEnchantability(this) + (enchantmentLevel - 1) * enchantabilityMultiplier.");
+		getInt("EnchantSoulSpeedEnchantabilityMultiplier", CATEGORY_GENERAL, 10, 0, 50, "The multiplier for the min Enchantability of the class SoulSpeedEnchantment. The min Enchantability is the result of baseEnchantability + (enchantmentLevel - 1) * enchantabilityMultiplier(this).");
 		//CreeperKillBaseEnchantability = config.getInt("CreeperKillBaseEnchantability", CATEGORY_GENERAL, 1, 0, 50, "The base value for the min Enchantability of Creeper Kill. The min Enchantability is the result of baseEnchantability(this) + (enchantmentLevel - 1) * enchantabilityMultiplier.");
 		getInt("CreeperKillBaseEnchantability", CATEGORY_GENERAL, 1, 0, 50, "The base value for the min Enchantability of Creeper Kill. The min Enchantability is the result of baseEnchantability(this) + (enchantmentLevel - 1) * enchantabilityMultiplier.");
 		//CreeperKillEnchantabilityMultiplier = config.getInt("CreeperKillEnchantabilityMultiplier", CATEGORY_GENERAL, 9, 0, 50, "The multiplier for the min Enchantability of Creeper Kill. The min Enchantability is the result of baseEnchantability + (enchantmentLevel - 1) * enchantabilityMultiplier(this).");
@@ -332,6 +338,7 @@ public class ConfigHandler {
 		EnchantRiptideLvl = getIntValue("RiptideEnchantmentLvl", CATEGORY_GENERAL);
 		EnchantQuickChargeLvl = getIntValue("QuickChargeEnchantmentLvl", CATEGORY_GENERAL);
 		EnchantPiercingLvl = getIntValue("PiercingEnchantmentLvl", CATEGORY_GENERAL);
+		EnchantSoulSpeedLvl = getIntValue("SoulSpeedEnchantmentLvl", CATEGORY_GENERAL);
 		SharpnessBaseEnchantability = getIntValue("SharpnessBaseEnchantability", CATEGORY_GENERAL);
 		SmiteBaseEnchantability = getIntValue("SmiteBaseEnchantability", CATEGORY_GENERAL);
 		BaneOfArthropodsBaseEnchantability = getIntValue("BaneOfArthropodsBaseEnchantability", CATEGORY_GENERAL);
@@ -382,6 +389,8 @@ public class ConfigHandler {
 		EnchantQuickChargeEnchantabilityMultiplier = getIntValue("EnchantQuickChargeEnchantabilityMultiplier", CATEGORY_GENERAL);
 		EnchantPiercingBaseEnchantability = getIntValue("EnchantPiercingBaseEnchantability", CATEGORY_GENERAL);
 		EnchantPiercingEnchantabilityMultiplier = getIntValue("EnchantPiercingEnchantabilityMultiplier", CATEGORY_GENERAL);
+		EnchantSoulSpeedBaseEnchantability = getIntValue("EnchantSoulSpeedBaseEnchantability", CATEGORY_GENERAL);
+		EnchantSoulSpeedEnchantabilityMultiplier = getIntValue("EnchantSoulSpeedEnchantabilityMultiplier", CATEGORY_GENERAL);
 		CreeperKillBaseEnchantability = getIntValue("CreeperKillBaseEnchantability", CATEGORY_GENERAL);
 		CreeperKillEnchantabilityMultiplier = getIntValue("CreeperKillEnchantabilityMultiplier", CATEGORY_GENERAL);
 	}
