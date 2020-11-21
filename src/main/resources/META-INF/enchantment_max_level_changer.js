@@ -315,14 +315,12 @@ function findFirstInstruction(method, opcode) {
 function removeUntilFirstInstruction(method, opcode) {
     var instructions = method.instructions.toArray();
     var remove = false;
-    var target;
     for(var i in instructions) {
         var instruction = instructions[i];
         if(instruction.getOpcode() != -1) {
             if(!remove) {
                 remove = true;
             }
-            target = instruction;
         }
         if(instruction.getOpcode() == opcode) {
             return instruction;
