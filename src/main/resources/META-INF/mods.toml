@@ -6,7 +6,7 @@ issueTrackerURL="https://github.com/ToMe25/LootingVI/issues"
     version="${file.jarVersion}" #mandatory
     displayName="Looting VI Mod" #mandatory
     displayURL="https://www.curseforge.com/minecraft/mc-mods/lootingvi"
-    credits="…"
+    credits="issizk1ng - Turkish translation"
     authors="ToMe25"
     description='''A mod that allows you to set the max level for all vanilla enchantments that are made in a way that the level matters.'''
 [[dependencies.lootingmod]]
