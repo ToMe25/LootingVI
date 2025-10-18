@@ -1,3 +1,4 @@
 {
-    "enchantment.lootingmod.creeperkill": "Creeper kill"
+    "enchantment.lootingmod.creeperkill": "Creeper kill",
+    "enchantment.lootingmod.creeperkill.desc": "Deals near infinite amounts of damage to Creepers."
 }
